@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    justify-content: center;
+    padding: 20px;
+}
+
+#countdown {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+#countdown span {
+    display: inline-block;
+    min-width: 80px;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#countdown div {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.search-container {
+    background: #fff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #1e3c72;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 1em;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #1e3c72;
+    background: #fff;
+}
+
+.search-container button {
+    width: 40%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #1e3c72;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background: #2a5298;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1e3c72;
+}
+
+.result .content {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    color: #1e3c72;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.result .content-center {
+    text-align: center;
+}
+
+.result .content-large {
+    white-space: normal; /* Allow wrapping for larger content */
+    max-height: 3em; /* Increase height for more visibility */
+    overflow: auto; /* Enable scrolling if content exceeds max height */
+}
